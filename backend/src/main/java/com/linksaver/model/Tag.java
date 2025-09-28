@@ -17,6 +17,15 @@ public class Tag {
 
     @ManyToMany(mappedBy = "tags")
     private Set<Link> links;
+    
+        public Long getId() { return id; }
+        public void setId(Long id) { this.id = id; }
+    
+        public String getName() { return name; }
+        public void setName(String name) { this.name = name; }
+    
+        public Set<Link> getLinks() { return links; }
+        public void setLinks(Set<Link> links) { this.links = links; }
 
     // getters and setters
 }
